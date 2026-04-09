@@ -1,0 +1,13 @@
+<p-button [label]="label()"
+          [link]="true"
+          [rounded]="rounded()"
+          [raised]="raised()"
+          [size]="size()"
+          [disabled]="disabled()"
+          [pTooltip]="tooltip()"
+          [showDelay]="showTipDelay()"
+          [tooltipPosition]="showTipPosition()"
+          [type]="type()"
+          (onClick)="onClick.emit($event)"
+          (onFocus)="onFocus.emit($event)"
+          (onBlur)="onBlur.emit($event)"/>
