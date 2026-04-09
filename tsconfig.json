@@ -11,6 +11,18 @@
     "skipLibCheck": true,
     "isolatedModules": true,
     "experimentalDecorators": true,
+    "baseUrl": "./",
+    "paths": {
+      "prb-buttons": [
+        "./dist/prb-buttons"
+      ],
+      "test": [
+        "./dist/test"
+      ],
+      "@themes/*": [
+        "./src/app/themes/*"
+      ]
+    },
     "importHelpers": true,
     "target": "ES2022",
     "module": "preserve"
@@ -28,6 +40,12 @@
     },
     {
       "path": "./tsconfig.spec.json"
+    },
+    {
+      "path": "./lib/buttons/tsconfig.lib.json"
+    },
+    {
+      "path": "./lib/buttons/tsconfig.spec.json"
     }
   ]
 }

@@ -2,6 +2,20 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.0.
 
+## Command to create this project
+
+```bash
+ng new prb-button -p prb --style scss --standalone --ai-config none --ssr false --zoneless true
+```
+
+## Command to add the library
+
+You must be in the root of the project to run this command.
+
+```bash
+ng generate library prb-buttons -p plib --project-root lib/buttons --standalone 
+```
+
 ## Development server
 
 To start a local development server, run:

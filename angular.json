@@ -27,9 +27,22 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "favicon.ico",
+                "input": "public",
+                "output": "/"
               }
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "public/assets/scss",
+                "public/assets/scss/code",
+                "."
+              ]
+            },
             "styles": [
+              "node_modules/primeicons/primeicons.css",
               "src/styles.scss"
             ]
           },
@@ -71,6 +84,32 @@
         },
         "test": {
           "builder": "@angular/build:unit-test"
+        }
+      }
+    },
+    "prb-buttons": {
+      "projectType": "library",
+      "root": "lib/buttons",
+      "sourceRoot": "lib/buttons/src",
+      "prefix": "plib",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "configurations": {
+            "production": {
+              "tsConfig": "lib/buttons/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "lib/buttons/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular/build:unit-test",
+          "options": {
+            "tsConfig": "lib/buttons/tsconfig.spec.json"
+          }
         }
       }
     }
