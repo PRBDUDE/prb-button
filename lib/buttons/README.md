@@ -23,6 +23,10 @@ h3 {
   border-bottom: 1px solid #8cafd4;
 }
 
+h4 {
+  color: #8cafd4;
+}
+
 strong {
   color: #f9c854;
   letter-spacing: 1px;
@@ -76,7 +80,7 @@ This command will compile your project, and the build artifacts will be placed i
 
 ### Publishing the Library
 
-Once the project is built, you can publish your library by following these steps:
+Once the project is built, you can manually publish your library by following these steps:
 
 1. Navigate to the `dist` directory:
 
@@ -89,9 +93,16 @@ Once the project is built, you can publish your library by following these steps
    npm publish
    ```
 
+#### Or you can use the npm script to watch for changes and publish the library automatically
+
+From the NPM script menu in Webstorm or IntelliJ, run this script:
+```npm
+build:lib:watch
+```
+
 ## Running unit tests
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+To execute unit tests with the [ViTest](https://vitest.dev/) test runner, use the following command:
 
 ```bash
 ng test
