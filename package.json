@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:lib": "ng build prb-buttons",
+    "build:lib:watch": "ng build --watch prb-buttons",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "unpublish:package": "npm unpublish @prb/buttons -f",
