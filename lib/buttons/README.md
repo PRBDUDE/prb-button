@@ -1,4 +1,35 @@
-# PrbButtons
+<style>
+h1 {
+  color: #2e9ca3;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: #e0edfb;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 40px;
+  margin: 1rem auto;
+}
+
+h2 {
+  color: #8cafd4;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+  color: #8cafd4;
+  width: fit-content;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #8cafd4;
+}
+
+strong {
+  color: #f9c854;
+  letter-spacing: 1px;
+}
+</style>
+
+# ![favicon.ico](../../public/favicon.ico) PrbButtons
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.0.
 
@@ -6,9 +37,18 @@ Buttons were copied from [programmer-roadblocks](https://github.com/PRBDUDE/prog
 
 Each button component was renamed to drop '**.component**' from the file name.
 
-Each component **selector:** was changed to 'plib-button-name' where 'button-name' is the name of the button.
+Each component **selector:** was changed to '**plib**-{button-name}' where '{button-name}' is the name of the button.
 
+## Local NPM Registry
+[verdaccio](https://verdaccio.org/) is a great option for a local NPM registry.
 
+If your company has a private NPM registry, you can use that instead.
+
+### NPM Setup
+
+Make sure you use the .npmrc file to set your registry.
+This project uses verdaccio as the local NPM registry.
+You can change it to your company's registry.
 
 ## Code scaffolding
 

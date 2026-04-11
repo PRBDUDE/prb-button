@@ -1,4 +1,35 @@
-# PrbButton
+<style>
+h1 {
+  color: #2e9ca3;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: #e0edfb;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 40px;
+  margin: 1rem auto;
+}
+
+h2 {
+  color: #8cafd4;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+  color: #8cafd4;
+  width: fit-content;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #8cafd4;
+}
+
+strong {
+  color: #f9c854;
+  letter-spacing: 1px;
+}
+</style>
+
+# ![favicon.ico](/public/favicon.ico) PrbButton
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.0.
 
@@ -16,7 +47,39 @@ You must be in the root of the project to run this command.
 ng generate library prb-buttons -p plib --project-root lib/buttons --standalone 
 ```
 
+## Local NPM Registry
+[verdaccio](https://verdaccio.org/) is a great option for a local NPM registry.
+
+If your company has a private NPM registry, you can use that instead.
+
+### NPM Setup
+
+Make sure you use the .npmrc file to set your registry.
+This project uses verdaccio as the local NPM registry.
+You can change it to your company's registry.
+
+## Build the library before using it in the project
+
+***IMPORTANT:***
+The library must be built before using it in the project.
+The library will be built in the dist folder.
+
+To build the library, run this command:
+
+```bash
+ng build prb-buttons
+```
+
+Run the npm script build:lib:watch to build the library in watch mode.
+This will automatically rebuild the library when changes are made to the source files.
+
+```npm
+build:lib:watch
+```
+
 ## Development server
+
+The project is used to demo the library.
 
 To start a local development server, run:
 
