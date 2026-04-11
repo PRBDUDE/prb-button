@@ -1,5 +1,5 @@
 {
-  "name": "prb-buttons",
+  "name": "@prb/buttons",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^21.2.0",
