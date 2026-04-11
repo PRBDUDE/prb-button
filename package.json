@@ -7,7 +7,12 @@
     "build": "ng build",
     "build:lib": "ng build prb-buttons",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "unpublish:package": "npm unpublish @prb/buttons -f",
+    "publish:package": "cd dist/prb-buttons && npm publish --registry http://localhost:4873",
+    "lint": "ng lint",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest run --coverage"
   },
   "prettier": {
     "printWidth": 100,
