@@ -1,10 +1,12 @@
 {
   "name": "@prb/buttons",
   "version": "0.0.1",
+  "author": "PRBDude",
+  "description": "PRB Buttons library",
   "peerDependencies": {
     "@angular/common": "^21.2.0",
     "@angular/core": "^21.2.0",
-    "primeng": "^21.1.5"
+    "primeng": "^21.1.6"
   },
   "dependencies": {
     "tslib": "^2.8.1"
