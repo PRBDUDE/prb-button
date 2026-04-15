@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {TertiaryButton} from 'prb-buttons';
+import {TertiaryButton} from '@prb/buttons';
 
 @Component({
   selector: 'prb-tertiary-demo',

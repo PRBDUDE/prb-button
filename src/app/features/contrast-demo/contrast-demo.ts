@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {ContrastButton} from 'prb-buttons';
+import {ContrastButton} from '@prb/buttons';
 
 @Component({
   selector: 'prb-contrast-demo',

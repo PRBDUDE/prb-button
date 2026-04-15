@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {InformationButton} from 'prb-buttons';
+import {InformationButton} from '@prb/buttons';
 
 @Component({
   selector: 'prb-information-demo',

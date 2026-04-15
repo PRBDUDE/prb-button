@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {HelpButton} from 'prb-buttons';
+import {HelpButton} from '@prb/buttons';
 
 @Component({
   selector: 'prb-help-demo',

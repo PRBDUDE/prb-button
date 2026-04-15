@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {PlainButton} from 'prb-buttons';
+import {PlainButton} from '@prb/buttons';
 
 @Component({
   selector: 'prb-plain-demo',

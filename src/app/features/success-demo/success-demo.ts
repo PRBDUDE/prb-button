@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {SuccessButton} from 'prb-buttons';
+import {SuccessButton} from '@prb/buttons';
 
 @Component({
   selector: 'prb-success-demo',

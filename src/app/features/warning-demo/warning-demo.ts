@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {WarningButton} from 'prb-buttons';
+import {WarningButton} from '@prb/buttons';
 
 @Component({
   selector: 'prb-warning-demo',
