@@ -1,45 +1,57 @@
 <style>
-h1 {
-  color: #2e9ca3;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  background-color: #e0edfb;
-  width: fit-content;
-  padding: 10px;
-  border-radius: 40px;
-  margin: 1rem auto;
-}
+  h1 {
+    color: #2e9ca3;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #e0edfb;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 40px;
+    margin: 1rem auto;
+  }
 
-h2 {
-  color: #8cafd4;
-  font-family: Arial, Helvetica, sans-serif;
-}
+  h2 {
+    color: #8cafd4;
+    font-family: Arial, Helvetica, sans-serif;
+  }
 
-h3 {
-  color: #8cafd4;
-  width: fit-content;
-  padding-right: 5px;
-  padding-bottom: 5px;
-  border-bottom: 1px solid #8cafd4;
-}
+  h3 {
+    color: #8cafd4;
+    width: fit-content;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #8cafd4;
+  }
+  
+  h4 {
+    background-color: #131314;
+    padding-top: 10px;
+    color: #8cafd4;
+  }
 
-strong {
-  color: #f9c854;
-  letter-spacing: 1px;
-}
+  strong {
+    color: #f9c854;
+    letter-spacing: 1px;
+  }
 </style>
 
 # ![favicon.ico](/public/favicon.ico) PrbButton
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.0.
 
-## Command to create this project
+## GitHub Repository
+
+[https://github.com/prbdude/prb-button](https://github.com/prbdude/prb-button)
+
+## Environment Setup
+
+### Command to create this project
 
 ```bash
 ng new prb-button -p prb --style scss --standalone --ai-config none --ssr false --zoneless true
 ```
 
-## Command to add the library
+### Command to add the library
 
 You must be in the root of the project to run this command.
 
@@ -47,12 +59,34 @@ You must be in the root of the project to run this command.
 ng generate library prb-buttons -p plib --project-root lib/buttons --standalone 
 ```
 
-## Local NPM Registry
+### Private NPM Registry
+
+If your company has a private NPM registry, you should use it.
+
+Examples of private *NPM* registries your company may use:
+
+- Sonatype Nexus
+- Artifactory (JFrog)
+- GCP Artifact Registry
+- AWS Artifact Registry
+
+If you don't have a private NPM registry, and you would like to use a private *npm* registry,
+you can use [Verdaccio](https://verdaccio.org/).
+Keep in mind that Veradaccio is a *PRIVATE LOCAL NPM* registry and will not work with your
+*CICD* pipeline.
+
+Veradaccio can be setup on an IIS server https://verdaccio.org/docs/iss-server to make it
+work with your *CICD* pipeline.
+
+See the following for more information:
+[VERADACCIO-SETUP.md](VERDACCIO-SETUP.md)
+
+### Local NPM Registry
 [verdaccio](https://verdaccio.org/) is a great option for a local NPM registry.
 
 If your company has a private NPM registry, you can use that instead.
 
-### NPM Setup
+#### NPM Setup
 
 Make sure you use the .npmrc file to set your registry.
 This project uses verdaccio as the local NPM registry.
