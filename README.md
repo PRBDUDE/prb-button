@@ -79,7 +79,7 @@ Veradaccio can be setup on an IIS server https://verdaccio.org/docs/iss-server t
 work with your *CICD* pipeline.
 
 See the following for more information:
-[VERADACCIO-SETUP.md](VERDACCIO-SETUP.md)
+[VERDACCIO-SETUP.md](VERDACCIO-SETUP.md)
 
 ### Local NPM Registry
 [verdaccio](https://verdaccio.org/) is a great option for a local NPM registry.
