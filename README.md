@@ -35,7 +35,7 @@
   }
 </style>
 
-# ![favicon.ico](/public/favicon.ico) PrbButton
+# ![favicon.ico](/public/favicon.ico) prb-button
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.0.
 
